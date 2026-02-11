@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Smart Electrical GB</title>
+    <meta name="description" content="Learn about Smart Electrical GB, our team of licensed electricians, our values, and our commitment to quality electrical services.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/images/smart electrical logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            background-color: var(--light-color);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgb(255, 0, 0);
+        }
+
+        .team-image {
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .team-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-info {
+            padding: 20px;
+        }
+
+        .team-info h3 {
+            margin-bottom: 5px;
+        }
+
+        .team-position {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .team-social {
+            margin-top: 15px;
+        }
+
+        .team-social a {
+            display: inline-block;
+            margin-right: 10px;
+            color: var(--dark-color);
+        }
+
+        .team-social a:hover {
+            color: var(--primary-color);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value-item {
+            background-color: var(--light-color);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .value-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 992px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .team-grid,
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/images/smart electrical logo.png" alt="Smart Electrical GB Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section style="padding: 120px 0 60px; background-color: var(--gray-color);">
+        <div class="container">
+            <h1>About Smart Electrical GB</h1>
+            <p>Your trusted partner for professional electrical services</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Smart Electrical GB was founded in 2010 with a simple mission: to provide high-quality electrical services with integrity, professionalism, and a focus on customer satisfaction.</p>
+                <p>What started as a small operation has grown into a trusted electrical service provider serving residential and commercial clients throughout the Greater London area. Our success is built on our commitment to excellence, safety, and building lasting relationships with our customers.</p>
+                <p>Today, our team of licensed electricians brings decades of combined experience to every project, ensuring that all work is completed to the highest standards and in compliance with all relevant regulations.</p>
+                <p>We take pride in our work and stand behind everything we do. When you choose Smart Electrical GB, you're choosing a partner who will be there for all your electrical needs, now and in the future.</p>
+            </div>
+            <div class="about-image">
+                <img src="../assets/images/about-image.jpg" alt="Smart Electrical GB Team">
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section style="padding: 80px 0; background-color: var(--gray-color);">
+        <div class="container">
+            <h2>Our Values</h2>
+            <p>The principles that guide everything we do</p>
+
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safety First</h3>
+                    <p>Safety is our top priority in every project. We follow strict safety protocols and ensure all work meets or exceeds industry safety standards to protect our clients and our team.</p>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Quality Workmanship</h3>
+                    <p>We take pride in delivering exceptional quality in all our electrical work. Our attention to detail and commitment to excellence ensures lasting results for every client.</p>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>We operate with honesty and transparency in all our dealings. From fair pricing to clear communication, we believe in building trust through integrity.</p>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Customer Focus</h3>
+                    <p>Our clients are at the center of everything we do. We listen to your needs, provide personalized solutions, and strive to exceed your expectations at every turn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section style="padding: 80px 0;">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <p>Our experienced professionals are ready to serve you</p>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="../assets/images/team-1.jpg" alt="John Smith">
+                    </div>
+                    <div class="team-info">
+                        <h3>John Smith</h3>
+                        <span class="team-position">Founder & Master Electrician</span>
+                        <p>With over 20 years of experience, John leads our team with expertise and a commitment to excellence in every project.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="../assets/images/team-2.jpg" alt="Sarah Johnson">
+                    </div>
+                    <div class="team-info">
+                        <h3>Sarah Johnson</h3>
+                        <span class="team-position">Senior Electrician</span>
+                        <p>Sarah specializes in residential electrical systems and brings creativity and precision to every home project.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="../assets/images/team-3.jpg" alt="Michael Brown">
+                    </div>
+                    <div class="team-info">
+                        <h3>Michael Brown</h3>
+                        <span class="team-position">Commercial Specialist</span>
+                        <p>Michael's expertise in commercial electrical systems ensures our business clients receive top-quality service.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section style="padding: 80px 0; background-color: var(--gray-color);">
+        <div class="container">
+            <h2>Our Certifications</h2>
+            <p>We maintain the highest standards of quality and safety</p>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px;">
+                <div style="text-align: center; max-width: 200px;">
+                    <img src="../assets/images/certification-1.png" alt="Certification" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h3>NICEIC Approved</h3>
+                </div>
+
+                <div style="text-align: center; max-width: 200px;">
+                    <img src="../assets/images/certification-2.png" alt="Certification" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h3>City & Guilds Qualified</h3>
+                </div>
+
+                <div style="text-align: center; max-width: 200px;">
+                    <img src="../assets/images/certification-3.png" alt="Certification" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h3>Fully Insured</h3>
+                </div>
+
+                <div style="text-align: center; max-width: 200px;">
+                    <img src="../assets/images/certification-4.png" alt="Certification" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    <h3>Health & Safety Certified</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Work With Us?</h2>
+            <p>Contact us today to discuss your electrical needs.</p>
+            <a href="contact.html" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Smart Electrical GB</h3>
+                    <p>Professional electrical services for residential and commercial properties. Licensed, insured, and committed to quality.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#residential">Residential Electrical</a></li>
+                        <li><a href="services.html#commercial">Commercial Electrical</a></li>
+                        <li><a href="services.html#emergency">Emergency Services</a></li>
+                        <li><a href="services.html#inspections">Electrical Inspections</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@smartelectricalgb.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, London, UK</li>
+                    </ul>
+                    <div style="margin-top: 20px;">
+                        <a href="#" style="margin-right: 15px;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="margin-right: 15px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="margin-right: 15px;"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Smart Electrical GB. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
