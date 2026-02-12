@@ -1,50 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Submission Received - Smart Electrical GB</title>
+    <title>Owner Dashboard - Smart Electrical GB</title>
     <link rel="stylesheet" href="../assets/css/main.css">
     <style>
-        .results-container { padding: 100px 0; max-width: 800px; margin: 0 auto; }
-        .data-card { background: #f9f9f9; border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-top: 20px; }
-        .data-item { margin-bottom: 10px; border-bottom: 1px dotted #ccc; padding-bottom: 5px; }
-        .label { font-weight: bold; color: #333; width: 150px; display: inline-block; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #333; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .status-new { color: green; font-weight: bold; }
     </style>
 </head>
 <body>
-    <section class="results-container">
-        <div class="container">
-            <h1>Submission Received!</h1>
-            <p>Here is the information we received from the form:</p>
-
-            <div class="data-card">
-                <div class="data-item">
-                    <span class="label">Name:</span> 
-                    <?php echo htmlspecialchars($_POST['name']); ?>
-                </div>
-                <div class="data-item">
-                    <span class="label">Email:</span> 
-                    <?php echo htmlspecialchars($_POST['email']); ?>
-                </div>
-                <div class="data-item">
-                    <span class="label">Phone:</span> 
-                    <?php echo htmlspecialchars($_POST['phone'] ?? 'Not provided'); ?>
-                </div>
-                <div class="data-item">
-                    <span class="label">Service:</span> 
-                    <?php echo htmlspecialchars($_POST['service']); ?>
-                </div>
-                <div class="data-item">
-                    <span class="label">Message:</span><br>
-                    <p><?php echo nl2br(htmlspecialchars($_POST['message'])); ?></p>
-                </div>
-            </div>
-
-            <div style="margin-top: 30px;">
-                <a href="contact.html" class="btn">Back to Contact Page</a>
-            </div>
-        </div>
-    </section>
+    <div class="container">
+        <h1>Your Bookings</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date Received</th>
+                    <th>Customer Name</th>
+                    <th>Phone</th>
+                    <th>Service Type</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                // Database connection and loop would go here
+                ?>
+                <tr>
+                    <td>2023-10-27</td>
+                    <td>John Doe</td>
+                    <td>07123 456789</td>
+                    <td>Residential</td>
+                    <td>Need a new socket in the kitchen.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
