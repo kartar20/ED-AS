@@ -1,35 +1,24 @@
-// Smart Electrical GB - Main JavaScript
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu toggle
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.querySelector('.menu-toggle');
     const header = document.querySelector('header');
-    
-    if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', function() {
-            header.classList.toggle('mobile-menu-open');
+    const closeMenu = () => {
+        header.classList.remove('mobile-menu-open');
+        button.setAttribute('aria-expanded', 'false');
+    };
+    if (button && header) {
+        button.addEventListener('click', () => {
+            const open = header.classList.toggle('mobile-menu-open');
+            button.setAttribute('aria-expanded', String(open));
         });
-    }
-    
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
-                
-                // Close mobile menu if open
-                if (header.classList.contains('mobile-menu-open')) {
-                    header.classList.remove('mobile-menu-open');
-                }
+        document.querySelectorAll('#navigation a').forEach(link => link.addEventListener('click', closeMenu));
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && header.classList.contains('mobile-menu-open')) {
+                closeMenu();
+                button.focus();
             }
         });
-    });
+        window.matchMedia('(min-width: 761px)').addEventListener('change', event => {
+            if (event.matches) closeMenu();
+        });
+    }
 });

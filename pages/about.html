@@ -1,371 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Smart Electrical GB</title>
-    <meta name="description"
-        content="Learn about Smart Electrical GB, our team of licensed electricians, our values, and our commitment to quality electrical services.">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../assets/images/smart electrical logo.png">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/main.css">
-
-    <style>
-        .About_container {
-            background-color: rgb(89, 144, 220);
-        }
-
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .team-member {
-            background-color: var(--light-color);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgb(255, 0, 0);
-        }
-
-        .team-image {
-            height: 250px;
-            overflow: hidden;
-        }
-
-        .team-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: fill;
-        }
-
-        .team-info {
-            padding: 20px;
-        }
-
-        .team-info h3 {
-            margin-bottom: 5px;
-        }
-
-        .team-position {
-            color: var(--primary-color);
-            font-weight: 500;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .team-social {
-            margin-top: 15px;
-        }
-
-        .team-social a {
-            display: inline-block;
-            margin-right: 10px;
-            color: var(--dark-color);
-        }
-
-        .team-social a:hover {
-            color: var(--primary-color);
-        }
-
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .value-item {
-            background-color: var(--light-color);
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        .value-icon {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 992px) {
-            .team-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-
-            .team-grid,
-            .values-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About us | Smart Electrical GB</title>
+<meta name="description" content="Professional electrical services for homes and businesses. Contact Smart Electrical GB in Littleover, Derby for repairs, installations and inspections.">
+<meta name="theme-color" content="#142a30">
+<link rel="icon" href="../assets/images/favicon.svg">
+<link rel="stylesheet" href="../assets/css/main.css">
 </head>
-
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../assets/images/smart electrical logo.png" alt="Smart Electrical GB Logo">
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Page Header -->
-    <section style="padding: 120px 0 60px; background-color: var(--gray-color);">
-        <div class="About_container">
-            <h1>About Smart Electrical GB</h1>
-            <p>Your trusted partner for professional electrical services</p>
-        </div>
-    </section>
-
-    <!-- Our Values -->
-    <section style="padding: 80px 0; background-color: var(--gray-color);">
-        <div class="container">
-            <h2>Our Values</h2>
-            <p>The principles that guide everything we do</p>
-
-            <div class="values-grid">
-                <div class="value-item">
-                    <div class="value-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Safety First</h3>
-                    <p>Safety is our top priority in every project. We follow strict safety protocols and ensure all
-                        work meets or exceeds industry safety standards to protect our clients and our team.</p>
-                </div>
-
-                <div class="value-item">
-                    <div class="value-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Quality Workmanship</h3>
-                    <p>We take pride in delivering exceptional quality in all our electrical work. Our attention to
-                        detail and commitment to excellence ensures lasting results for every client.</p>
-                </div>
-
-                <div class="value-item">
-                    <div class="value-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Integrity</h3>
-                    <p>We operate with honesty and transparency in all our dealings. From fair pricing to clear
-                        communication, we believe in building trust through integrity.</p>
-                </div>
-
-                <div class="value-item">
-                    <div class="value-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Customer Focus</h3>
-                    <p>Our clients are at the center of everything we do. We listen to your needs, provide personalized
-                        solutions, and strive to exceed your expectations at every turn.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Team -->
-    <section style="padding: 80px 0;">
-        <div class="container">
-            <h2>Our Reviews</h2>
-            <p>How to comunty thinks of us.</p>
-
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="team-image">
-                        <img src="../assets/images/revews/Manpreet_r1.png" alt="John Smith">
-                    </div>
-                    <div class="team-info">
-                        <h3>Manpreet Dhadwar</h3>
-                        <p>Smart Electrical was recommended to me by a friend. They provided a very professional service
-                            which was competitive in price and work was of good quality. The electrician was qualified
-                            and certified which was reassuring.He kept the work area clean at all times and was overall
-                            a very stress free experience . Before the electrician left he informed us of all the work
-                            that was done and made recommendations on what work we may consider in future which was
-                            helpful. I would highly recommend Smart Electrical to friends and family and will always use
-                            in future when needing a qualified electrician.</p>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <div class="team-image">
-                        <img src="../assets/images/revews/Rajeev_Chopra.png" alt="Sarah Johnson">
-                    </div>
-                    <div class="team-info">
-                        <h3>Rajeev Chopra</h3>
-                        <p> I cannot recommend Amrik highly enough! I was in a real bind needing a new EICR certificate
-                            urgently before new tenants moved in. I reached out and he was incredibly accommodating,
-                            managed to fit me in the very next day, and handled everything with total professionalism.
-                            His turnaround time and efficiency were life-savers. If you need a reliable, fast, and
-                            professional electrician, Amrik is your guy!. Very professional and knowledgeable would
-                            highly recommend to any one needing certificates or work carrying out.</p>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <div class="team-image">
-                        <img src="../assets/images/revews/kamal.png" alt="Michael Brown">
-                    </div>
-                    <div class="team-info">
-                        <h3>Kamalpreet SIngh Chauhan</h3>
-                        <p>Really quality, honest and friendly service. Smart electrical is my go to electrician. All my
-                            properties are managed by him. Highly recommended.
-                            Positive
-                            Quality
-
-                            Services
-                            General repairs, Ground wire installation, Light fixture installation, Outdoor lighting
-                            installation, Electrical socket and switch installation, Security system installation,
-                            Installation, Electrical socket and switch relocation, Electrical socket and switch repair
-                        </p>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications -->
-    <section style="padding: 80px 0; background-color: var(--gray-color);">
-        <div class="container">
-            <h2>Our Certifications</h2>
-            <p>We maintain the highest standards of quality and safety</p>
-
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px;">
-                <div style="text-align: center; max-width: 200px;">
-                    <img src="../assets/images/NICEIC-logo.png" alt="Certification"
-                        style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h3>NICEIC Approved</h3>
-                </div>
-
-                <div style="text-align: center; max-width: 200px;">
-                    <img src="../assets/images/city.png" alt="Certification"
-                        style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h3>City & Guilds Qualified</h3>
-                </div>
-
-                <div style="text-align: center; max-width: 200px;">
-                    <img src="../assets/images/insured.png" alt="Certification"
-                        style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h3>Fully Insured</h3>
-                </div>
-
-                <div style="text-align: center; max-width: 200px;">
-                    <img src="../assets/images/Safty.png" alt="Certification"
-                        style="max-width: 50%; height: auto; margin-bottom: 15px;">
-                    <h3>Health & Safety Certified</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Work With Us?</h2>
-            <p>Contact us today to discuss your electrical needs.</p>
-            <a href="contact.html" class="btn">Get in Touch</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3>Smart Electrical GB</h3>
-                    <p>Professional electrical services for residential and commercial properties. Licensed, insured,
-                        and committed to quality.</p>
-                </div>
-
-                <div class="footer-column">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="services.html#residential">Residential Electrical</a></li>
-                        <li><a href="services.html#commercial">Commercial Electrical</a></li>
-                        <li><a href="services.html#emergency">Emergency Services</a></li>
-                        <li><a href="services.html#inspections">Electrical Inspections</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li><i class="fas fa-phone"></i> +44 7957 457390</li>
-                        <li><i class="fas fa-envelope"></i> info@smartelectricalgb.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 149 Haven Baulk Ln, Littleover, Derby DE23 4AF</li>
-                    </ul>
-                    <div style="margin-top: 20px;">
-                        <a href="#" style="margin-right: 15px;"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" style="margin-right: 15px;"><i class="fab fa-twitter"></i></a>
-                        <a href="#" style="margin-right: 15px;"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2023 Smart Electrical GB. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Custom JavaScript -->
-    <script src="../assets/js/main.js"></script>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="topbar">
+<div class="container">
+<span>YOUR LOCAL ELECTRICAL SPECIALISTS · DERBY</span>
+<a href="tel:+447957457390">Let’s talk: +44 7957 457390 ↗</a>
+</div>
+</div>
+<header>
+<div class="container header-inner">
+<a class="brand" href="../index.html" aria-label="Smart Electrical GB home">
+<img class="brand-logo" src="../assets/images/logo.png" alt="Smart Electrical GB" width="639" height="389">
+<span class="brand-text">Smart Electrical<span class="brand-sub">GB · ELECTRICAL SPECIALISTS</span></span>
+</a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="navigation" type="button">Menu <span aria-hidden="true">☰</span>
+</button>
+<nav id="navigation" aria-label="Main navigation">
+<a href="../index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html" aria-current="page">About us</a>
+<a href="contact.html">Contact</a>
+<a class="btn btn-small" href="contact.html">Get a free quote <span aria-hidden="true">↗</span>
+</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-intro">
+<div class="container">
+<p class="eyebrow">ABOUT SMART ELECTRICAL GB</p>
+<h1>Professional by nature.<br>Personal by approach.</h1>
+<p class="lead">Electrical expertise with care for your property, your plans and your peace of mind.</p>
+</div>
+</section>
+<section class="section">
+<div class="container split">
+<div>
+<p class="eyebrow">LOCAL EXPERTISE</p>
+<h2>Small details.<br>Higher standards.</h2>
+<p>Based in Littleover, Derby, Smart Electrical GB provides electrical services for homes and businesses. From fault finding to a full installation, we bring the same considered approach to every job.</p>
+<p>We believe good service means listening first, explaining the options clearly and treating your space with respect.</p>
+<a class="text-link" href="contact.html">Talk to us about your project ↗</a>
+</div>
+<div class="about-image">
+<img src="../assets/images/Electrican working .jpg" alt="Electrical installation work" loading="lazy">
+</div>
+</div>
+</section>
+<section class="section about-band">
+<div class="container">
+<p class="eyebrow">OUR VALUES</p>
+<h2>The way we work matters.</h2>
+<div class="values-grid">
+<article class="value-card">
+<span class="step-number">01</span>
+<h3>Safety first</h3>
+<p>Careful planning and attention to detail at every stage of your project.</p>
+</article>
+<article class="value-card">
+<span class="step-number">02</span>
+<h3>Quality workmanship</h3>
+<p>Practical solutions and a finish we can take pride in.</p>
+</article>
+<article class="value-card">
+<span class="step-number">03</span>
+<h3>Straightforward advice</h3>
+<p>Clear communication, honest recommendations and a shared understanding of the work.</p>
+</article>
+<article class="value-card">
+<span class="step-number">04</span>
+<h3>Respect for your space</h3>
+<p>A considerate service that keeps you informed and leaves your property tidy.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section" id="reviews">
+<div class="container">
+<p class="eyebrow">CUSTOMER FEEDBACK</p>
+<h2>A reputation built on care.</h2>
+<div class="review-grid">
+<figure>
+<blockquote>“They provided a very professional service which was competitive in price and work was of good quality.”</blockquote>
+<figcaption>Manpreet Dhadwar</figcaption>
+</figure>
+<figure>
+<blockquote>“I cannot recommend Amrik highly enough! … handled everything with total professionalism.”</blockquote>
+<figcaption>Rajeev Chopra · excerpt</figcaption>
+</figure>
+<figure>
+<blockquote>“Really quality, honest and friendly service. Smart electrical is my go to electrician.”</blockquote>
+<figcaption>Kamalpreet Singh Chauhan</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="cta">
+<div class="container cta-inner">
+<div>
+<p class="eyebrow">LET’S GET IT SORTED</p>
+<h2>A brighter idea starts<br>with a conversation.</h2>
+<p>Tell us what you need. We’ll help you take the next step.</p>
+</div>
+<a class="btn" href="contact.html">Get a free quote <span aria-hidden="true">↗</span>
+</a>
+</div>
+</section>
+</main>
+<footer>
+<div class="container footer-grid">
+<div>
+<a class="brand" href="../index.html" aria-label="Smart Electrical GB home">
+<img class="brand-logo" src="../assets/images/logo.png" alt="Smart Electrical GB" width="639" height="389">
+<span class="brand-text">Smart Electrical<span class="brand-sub">GB · ELECTRICAL SPECIALISTS</span></span>
+</a>
+<p>Considered solutions.<br>Dependable electrical expertise.</p>
+</div>
+<div>
+<h2>Explore</h2>
+<a href="../index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html" aria-current="page">About us</a>
+<a href="contact.html">Contact</a>
+</div>
+<div>
+<h2>Get in touch</h2>
+<a href="tel:+447957457390">+44 7957 457390</a>
+<a href="mailto:info@smartelectricalgb.com">info@smartelectricalgb.com</a>
+<p>149 Haven Baulk Ln, Littleover<br>Derby DE23 4AF</p>
+</div>
+</div>
+<div class="container footer-bottom">
+<span>© 2026 Smart Electrical GB</span>
+<span>Homes. Businesses. Peace of mind.</span>
+</div>
+</footer>
+<script src="../assets/js/main.js">
+</script>
 </body>
-
 </html>
